@@ -8,6 +8,7 @@
   font-family: 'Roboto', sans-serif;
 }
 body {
+  padding-top: 80px;
   background-color: #192a56;
   color: #f5f6fa;
 }
@@ -15,6 +16,7 @@ body li {
   list-style: none;
 }
 .container {
+  padding-top: 90px;
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
@@ -26,11 +28,13 @@ body li {
 @media (max-width: 1023px) {
   .container {
     max-width: 80%;
+    padding-top: 90px;
   }
 }
 @media (max-width: 767px) {
   .container {
     max-width: 70%;
+    padding-top: 90px;
   }
 }
 header {
