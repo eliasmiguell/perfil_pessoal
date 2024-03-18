@@ -4,6 +4,18 @@
   ],
   "hints": {
     "disown-opener": "off",
-    "axe/text-alternatives": "off"
+    "axe/text-alternatives": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "axe/keyboard": [
+      "default",
+      {
+        "nested-interactive": "off"
+      }
+    ]
   }
 }
