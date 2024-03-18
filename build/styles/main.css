@@ -54,16 +54,21 @@ header li a:hover,
 }
 .container {
   max-width: 1024px;
-  width: 90%;
   margin: 150px auto;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-@media (max-width: 768px) and (min-width: 660px) {
+@media (max-width: 768px) {
   .container {
     width: 90%;
     margin: 90px auto;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+    margin: auto;
   }
 }
 
@@ -106,6 +111,11 @@ header li a:hover,
 .info h3 {
   font-size: 45px;
   color: rgb(46, 45, 45);
+}
+@media (max-width: 320px) {
+  .info h3 {
+    font-size: 0px;
+  }
 }
 @media (max-width: 768px) {
   .info h3 {
