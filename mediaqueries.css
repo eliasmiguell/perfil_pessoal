@@ -45,6 +45,9 @@
   .about-containers {
     margin-top: 0;
   }
+  .about-containeres {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -67,6 +70,9 @@
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
+  }
+  .about-containeres {
+    grid-template-columns: 1fr;
   }
   .contact-info-container {
     margin: 0;
@@ -101,7 +107,7 @@
     text-align: justify;
   }
   .sociais_List {
-    display: inline-block;
+    display: block;
     padding: 10px;
     margin-bottom: 60px;
     text-align: center;

@@ -8,7 +8,8 @@
     "axe/name-role-value": [
       "default",
       {
-        "link-name": "off"
+        "link-name": "off",
+        "button-name": "off"
       }
     ],
     "axe/keyboard": [
@@ -29,7 +30,8 @@
         "ignore": [
           "min-height: fit-content",
           "width: fit-content",
-          "text-underline-offset"
+          "text-underline-offset",
+          "height: fit-content"
         ]
       }
     ]

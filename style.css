@@ -283,12 +283,15 @@ section {
   justify-content: center;
   flex-direction: column;
 }
-
 .about-containers,
 .about-details-container {
   display: flex;
 }
-
+.about-containeres {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
 .about-pic {
   border-radius: 2rem;
 }
@@ -426,9 +429,8 @@ article .icon {
   height: 2.5rem;
 }
 .sociais_List {
-  padding: 30px;
+  padding: 25px;
   display: inline-flex;
-  text-align: center;
 }
 .sociais_List_item {
   padding: 40px;
@@ -442,7 +444,7 @@ article .icon {
 
 footer {
   height: 26vh;
-  margin: 0 1rem;
+  text-align: center;
 }
 
 footer p {
