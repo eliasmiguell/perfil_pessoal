@@ -68,7 +68,7 @@ a:hover {
   cursor: default;
 }
 
-/* HAMBURGER MENU */
+/* HAMBURGER MENU 
 
 #hamburger-nav {
   display: none;
@@ -146,13 +146,12 @@ a:hover {
 
 .hamburger-icon span:first-child {
   transform: none;
-}
+}*/
 
 /* SECTIONS */
 
 section {
   padding-top: 4vh;
-
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -168,7 +167,6 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
 }
 
 .section__pic-container {
