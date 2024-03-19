@@ -269,8 +269,9 @@ section {
 
 /* ABOUT SECTION */
 
-#about {
+#SobreMim {
   position: relative;
+  height: 96vh;
 }
 
 .about-containers {
