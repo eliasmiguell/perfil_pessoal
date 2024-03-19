@@ -19,7 +19,7 @@
   #hamburger-nav {
     display: flex;
   }
-  #experience,
+  #experiencias,
   .experience-details-container {
     margin-top: 2rem;
   }
@@ -48,12 +48,21 @@
   .about-containeres {
     grid-template-columns: 1fr 1fr;
   }
+  #SobreMim {
+    height: 96vh;
+  }
 }
 
 @media screen and (max-width: 600px) {
   #Contatos,
   footer {
     height: 40vh;
+  }
+  #SobreMim {
+    height: 96vh;
+  }
+  #experiencias {
+    margin-top: 300px;
   }
 
   #profile {
