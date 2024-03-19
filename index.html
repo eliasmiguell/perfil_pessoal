@@ -1,259 +1,469 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página do Elias</title>
-    <link rel="stylesheet" href="./build/styles/main.css" />
+    <title>Meu Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <!-- <header>
-      <h1 class="profile-bio-name">Elias Perreira Miguel</h1>
-      <nav>
-        <ul>
+    <nav id="desktop-nav">
+      <div class="logo">Elias Perreira Miguel</div>
+      <div>
+        <ul class="nav-links">
           <li><a href="#SobreMim">Sobre</a></li>
           <li><a href="#experiencias">Experiêcias</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#Contatos">Cantato</a></li>
         </ul>
-      </nav>
-      <nav id="hamburger-nav">
-        <div class="logo">Elias Perreira Miguel</div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <nav id="hamburger-nav">
-            <div class="logo">John Doe</div>
-            <div class="hamburger-menu">
-              <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-          <div class="menu-links">
-            <li><a href="#SobreMim" onclick="toggleMenu()">Sobre</a></li>
-            <li><a href="#experiencias" onclick="toggleMenu()">Experiências</a></li>
-            <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
-            <li><a href="#Contatos" onclick="toggleMenu()">Contato</a></li>
-          </div>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Elias Perreira Miguel</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </nav>
-    </header> -->
-    <section class="apresentacao container">
-      <img src="./src/images/Assets/eu.jpeg" alt="foto do Elias" />
-      <div class="info">
-        <span>Olá, eu sou</span>
-        <h2>Elias Perreira Miguel</h2>
-        <h3>Desenvolvedor Front End/Web</h3>
-        <div class="butoes">
+        <div class="menu-links">
+          <li><a href="#SobreMim" onclick="toggleMenu()">Sobre</a></li>
+          <li>
+            <a href="#experiencias" onclick="toggleMenu()">Experiêcias</a>
+          </li>
+          <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#Contatos" onclick="toggleMenu()">Cantato</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/eu.jpeg"
+          alt="Elias Perreira Miguel profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá, eu sou</p>
+        <h1 class="title">Elias Perreira Miguel</h1>
+        <p class="section__text__p2">Desencolvedor Front End</p>
+        <div class="btn-container">
           <button
-            class="cv"
-            type="button"
+            class="btn btn-color-2"
             onclick="window.open('./src/images/Assets/Curriculo Estagio dev A.pdf')"
           >
-            Baixar cv
+            Baixar CV
           </button>
-          <button class="contato" type="button"><a href="#Contatos">Contato</a></button>
+          <button class="btn btn-color-1" >
+            <a href="#Contatos">Contato</a>
+            
+          </button>
         </div>
-        <div class="info_sociais">
+        <div id="socials-container">
           <a
             href="https://www.linkedin.com/in/elias-perreira-miguel/"
             target="_blank"
             ><i class="bi bi-linkedin"></i
           ></a>
           <a href="https://github.com/eliamiguel"
-            ><i class="bi bi-github"></i
+          target="_blank"><i class="bi bi-github"></i
           ></a>
         </div>
       </div>
     </section>
-    <section id="SobreMim" class="container">
-      <span>Conheça mais</span>
-      <h2>Sobre mim</h2>
-
-      <div class="sobremim_container">
-        <div>
-          <img src="./src/images/elias.jpeg" alt="Imagem do Elias" />
+    <section id="SobreMim">
+      <p class="section__text__p1">Conheça mais</p>
+      <h1 class="title">Sobre mim</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/eu.jpeg" alt="Imagem do Elias" />
         </div>
-
-        <div class="div">
-          <div class="formacao_experiencia">
-            <div class="expericiaDiv">
-              <i class="bi bi-patch-check-fill"></i>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
               <h3>Experiencia</h3>
               <p>2 anos <br />Desencolvedor Front End</p>
             </div>
-            <div class="formacao">
-              <i class="bi bi-people-fill"></i>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
               <h3>Formação</h3>
               <p>Bacherel Humanidade <br />Linc. Pedagogia</p>
               <p>A. desenvolvimento de sistemas</p>
             </div>
           </div>
-
+          <div class="text-container">
+            <p>
+              Olá, meu nome é Elias Perreira Miguel e sou um desenvolvedor
+              front-end apaixonado por tecnologia. Com mais de 1 ano e 6 meses
+              de experiência.com o objetivo de criar sites com interfaces
+              modernas. Curiosidade e interesse por desenvolvimento web desde
+              pequeno, porém dedicando-se a esse aprendizado no último ano por
+              meio de diversos cursos de formação na área.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experiencias">
+      <p class="section__text__p1">Explore minhas</p>
+      <h1 class="title">Experiências</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Desenvolvimento Front End</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sass</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Less</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>React</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Jquery</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>VueJs</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Desenvolvimento Back End</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projetos">
+      <p class="section__text__p1">Navegar em meus recentes</p>
+      <h1 class="title">Projetos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./src/images/Assets/disney1.jpeg" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Projeto Clone disney
+            </h2>
+            <div class="btn-container">
+              <button type="button" class="btn btn-color-2 project-btn">
+                <a href="https://github.com/eliamiguel/clone_disneyplus"
+                  >Github</a
+                >
+              </button>
+              <button type="button" class="btn btn-color-2 project-btn">
+                <a href="https://clone-disneyplus-gou9.vercel.app/">Demo</a>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Projeto Loja de Roupas
+            </h2>
+            <div class="btn-container">
+              <button type="button" class="btn btn-color-2 project-btn">
+                <a href="https://github.com/eliamiguel/Emy-by">Github</a>
+              </button>
+              <button type="button" class="btn btn-color-2 project-btn">
+                <a href="https://emy-by.vercel.app/">Demo</a>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Projeto Site de filmes
+            </h2>
+            <div class="btn-container">
+              <button type="button" class="btn btn-color-2 project-btn">
+                <a href="https://github.com/eliamiguel/Landing_page_filme"
+                target="_blank">Github</a
+                >
+              </button>
+              <button type="button" class="btn btn-color-2 project-btn">
+                <a href="https://landing-page-filme-lemon.vercel.app/">Demo</a>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Projeto Restaurante
+            </h2>
+            <div class="btn-container">
+              <button type="button" class="btn btn-color-2 project-btn">
+                <a href="https://github.com/eliamiguel/restaurante_efood"
+                target="_blank" >Github</a
+                >
+              </button>
+              <button
+                type="button"
+                disabled
+                class="btn btn-color-2 project-btn"
+              >
+                <a href="#">Demo</a>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Projeto Loja de games
+            </h2>
+            <div class="btn-container">
+              <button type="button" class="btn btn-color-2 project-btn">
+                <a href="https://github.com/eliamiguel/eplay">Github</a>
+              </button>
+              <button
+                type="button"
+                disabled
+                class="btn btn-color-2 project-btn"
+              >
+                <a href="#">Demo</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Contatos">
+      <p class="section__text__p1">Entrar em contato</p>
+      <h1 class="title">Contate-me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
           <p>
-            Olá, meu nome é Elias Perreira Miguel e sou um desenvolvedor
-            front-end apaixonado por tecnologia. Com mais de 1 ano e 6 meses de
-            experiência.com o objetivo de criar sites com interfaces modernas.
-            Curiosidade e interesse por desenvolvimento web desde pequeno, porém
-            dedicando-se a esse aprendizado no último ano por meio de diversos
-            cursos de formação na área.
+            <a href="mailto:examplemail@gmail.com"
+              >eliasperreiramiguel@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/elias-perreira-miguel/"
+            target="_blank" >LinkedIn</a
+            >
           </p>
         </div>
       </div>
-    </section>
-    <section id="experiencias" class="container">
-      <div>
-        <span>Explore minhas</span>
-        <h2>Experiências</h2>
-      </div>
-      <div class="conhecimentos">
-        <div class="conhecimentos_front">
-          <h3>Desenvolvimento Front End</h3>
-          <div class="conhecimentos_list">
-            <ul>
-              <li><i class="bi bi-check2-circle">HTML</i></li>
-              <li><i class="bi bi-check2-circle">JAVASCRIPT</i></li>
-              <li><i class="bi bi-check2-circle"></i>SASS</li>
-              <li><i class="bi bi-check2-circle"></i>LESS</li>
-              <li><i class="bi bi-check2-circle"></i>CSS</li>
-            </ul>
-            <ul>
-              <li><i class="bi bi-check2-circle"></i>TYPESCRIPT</li>
-              <li><i class="bi bi-check2-circle"></i>JQUERY</li>
-              <li><i class="bi bi-check2-circle"></i>GRUNT</li>
-              <li><i class="bi bi-check2-circle"></i>REACT</li>
-              <li><i class="bi bi-check2-circle"></i>STYLEDCOMPONENTE</li>
-              <li>Noções em:</li>
-              <li><i class="bi bi-check2-circle"></i>VueJS</li>
-              <li><i class="bi bi-check2-circle"></i>Gulp</li>
-            </ul>
-          </div>
-        </div>
-        <div class="conhecimentos_back">
-          <h3>Desenvolvimento Back End</h3>
-          <div class="conhecimentos_list">
-            <ul>
-              <li><i class="bi bi-check2-circle">GIT</i></li>
-              <li><i class="bi bi-check2-circle">NODE.JS</i></li>
-              <li><i class="bi bi-check2-circle"></i>EXPRESS.JS</li>
-              <li><i class="bi bi-check2-circle"></i>MSQL</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projetos" class="container">
-      <div>
-        <span>Navegar em meus recentes</span>
-        <h2>Projetos</h2>
-      </div>
-      <div class="projetos_list">
-        <div class="projetos_item">
-          <div><img src="./src/images/Assets/disney1.jpeg"  /></div>
-          <h3>Projeto Clone disney</h3>
-          <div>
-            <button type="button"><a href="https://github.com/eliamiguel/clone_disneyplus">Github</a></button>
-            <button type="button"><a href="https://clone-disneyplus-gou9.vercel.app/">Demo</a></button>
-          </div>
-        </div>
-        <div class="projetos_item">
-          <div><img src="./src/images/Assets/emy1.jpeg"  /></div>
-          <h3>Projeto Loja de Roupas</h3>
-          <div>
-            <button type="button"><a href="https://github.com/eliamiguel/Emy-by">Github</a></button>
-            <button type="button"><a href="https://emy-by.vercel.app/">Demo</a></button>
-          </div>
-        </div>
-        <div class="projetos_item">
-          <div><img src="./src/images/Assets/filme1.jpeg" /></div>
-          <h3>Projeto Site de filmes</h3>
-          <div>
-            <button type="button"><a href="https://github.com/eliamiguel/Landing_page_filme">Github</a></button>
-            <button type="button"><a href="https://landing-page-filme-lemon.vercel.app/">Demo</a></button>
-          </div>
-        </div>
-        <div class="projetos_item">
-          <div><img src="./src/images/Assets/efood.png" /></div>
-          <h3>Projeto Restaurante</h3>
-          <div>
-            <button type="button"><a href="https://github.com/eliamiguel/restaurante_efood">Github</a></button>
-            <button type="button" disabled><a href="#" >Demo</a></button>
-          </div>
-        </div>
-        <div class="projetos_item">
-          <div><img src="./src/images/Assets/games.png"  /></div>
-          <h3>Projeto Loja de games</h3>
-          <div>
-            <button type="button"><a href="https://github.com/eliamiguel/eplay">Github</a></button>
-            <button type="button" disabled><a href="#">Demo</a></button>
-          </div>
-        </div>
-        <div class="projetos_item">
-          <div><img src="./src/images/Assets/efood.png"  /></div>
-          <h3>Projeto Restaurante</h3>
-          <div>
-            <button type="button"><a href="https://github.com/eliamiguel/restaurante_efood">Github</a></button>
-            <button type="button"  disabled><a href="#">Demo</a></button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="Contatos" class="container">
-        <span>Entrar em contato</span>
-        <h2>Contate-me</h2>
-          <div class="contatos-List ">
-            <div class="p"><i class="bi bi-envelope-fill"></i><span>eliasperreiramiguel@gmail.com</span></div>
-          <div class="p"><a href="#"><i class="bi bi-linkedin"></i> <span>Linkedin</span></a></div> 
-          </div> 
-      <div>
-        <ul class="sociais_List">
-          <li class="sociais_List_item">
-            <a href="https://www.instagram.com/cordeiro9443/" target="_blank">
-              <i class="bi bi-instagram"> <span>Instagram</span></i
-            ></a>
-          </li>
-         <li class="sociais_List_item">
-          <a href="https://wa.me/+5541988600519" target="_blank">
-            <i class="bi bi-whatsapp"></i> <span>Whatsapp</span></i
-          ></a>
-         </li>
-          <li class="sociais_List_item"> 
-            <a href="https://www.facebook.com/?paipv=0&eav=AfZHwNCsIAuqLZYfHNDt0daHqV94qjnx4T1zGKh644kQmLixmZYvhY2P3h_5VASiuxo&_rdr" target="_blank">
-              <i class="bi bi-facebook"></i> <span>Facebook</span></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-      <ul class="contatos_nav">
-        <li><a href="#SobreMim">Sobre</a></li>
-        <li><a href="#experiencias">Experiêcias</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#Contatos">Cantato</a></li>
-      </ul>
 
-      <div>
-    
+      
     </section>
-    <footer class="footer ">
+    <footer>
+      <ul class="sociais_List">
+        <li class="sociais_List_item">
+          <a href="https://www.instagram.com/cordeiro9443/" target="_blank">
+            <i class="bi bi-instagram"> <span>Instagram</span></i
+          ></a>
+        </li>
+       <li class="sociais_List_item">
+        <a href="https://wa.me/+5541988600519" target="_blank">
+          <i class="bi bi-whatsapp"></i> <span>Whatsapp</span></i
+        ></a>
+       </li>
+        <li class="sociais_List_item"> 
+          <a href="https://www.facebook.com/?paipv=0&eav=AfZHwNCsIAuqLZYfHNDt0daHqV94qjnx4T1zGKh644kQmLixmZYvhY2P3h_5VASiuxo&_rdr" target="_blank">
+            <i class="bi bi-facebook"></i> <span>Facebook</span></i
+          ></a>
+        </li>
+      </ul>
       <p>
-        Direitos autorais © 2023 Elias Miguel. Todos os direitos reservados.
+        Copyright &#169; 2023 Elias Perreira Miguel. Todos os direitos
+        reservados.
       </p>
     </footer>
-    <script src="main.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
