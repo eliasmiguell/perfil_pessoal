@@ -166,6 +166,7 @@ section {
 
 #profile {
   display: flex;
+  height: 96vh;
   justify-content: center;
   gap: 5rem;
 }
