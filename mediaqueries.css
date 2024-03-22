@@ -102,10 +102,12 @@
     gap: 0.5rem;
     text-align: center;
   }
-  .section__pic-container {
+  .section__pic-container,
+  .section__pic-container1 {
     width: auto;
     height: 46vw;
     justify-content: center;
+    margin: 25px 0px;
   }
   .section__text__p2 {
     font-size: 1.25rem;
