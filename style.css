@@ -8,10 +8,14 @@
   text-decoration: none;
   list-style: none;
   text-align: none;
+  text-decoration: none;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+}
+body a {
+  text-decoration: none;
 }
 
 html {
