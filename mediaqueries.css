@@ -23,6 +23,9 @@
   .experience-details-container {
     margin-top: 2rem;
   }
+  #experiencias {
+    margin-top: 21rem;
+  }
   #profile,
   .section-container {
     display: block;
@@ -30,9 +33,13 @@
   .arrow {
     display: none;
   }
+
   section,
   .section-container {
     height: fit-content;
+  }
+  .section__pic-container1 {
+    margin: 20px auto;
   }
   section {
     margin: 0 5%;
@@ -42,6 +49,7 @@
     height: 275px;
     margin: 0 auto 2rem;
   }
+
   .about-containers {
     margin-top: 0;
   }
@@ -61,6 +69,7 @@
   #SobreMim {
     height: 96vh;
   }
+
   #experiencias {
     margin-top: 250px;
   }
