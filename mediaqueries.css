@@ -142,3 +142,9 @@
     font-size: 15px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  #experiencias {
+    margin-top: 25rem;
+  }
+}
