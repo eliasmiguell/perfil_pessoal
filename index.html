@@ -1,492 +1,599 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Portfolio</title>
+    <title>Elias Perreira Miguel - Desenvolvedor Full Stack</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Elias Perreira Miguel</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#SobreMim">Sobre</a></li>
-          <li><a href="#experiencias">Experiêcias</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#Contatos">Cantato</a></li>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-text">Elias Miguel</span>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experiência</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contato</a>
+          </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </div>
     </nav>
 
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-          src="./assets/eu.jpeg"
-          alt="Elias Perreira Miguel profile picture"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Olá, eu sou</p>
-        <h1 class="title">Elias Perreira Miguel</h1>
-        <p class="section__text__p2">Desenvolvedor Front End</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./src/images/Assets/Curriculo Estagio dev A.pdf')"
-          >
-            Baixar CV
-          </button>
-          <button class="btn btn-color-1" >
-            <a href="#Contatos"></a>
-            Contato
-          </button>
-        </div>
-        <div id="socials-container">
-          <a
-            href="https://www.linkedin.com/in/elias-perreira-miguel/"
-            target="_blank"
-            ><i class="bi bi-linkedin"></i
-          ></a>
-          <a href="https://github.com/eliamiguel"
-          target="_blank"><i class="bi bi-github"></i
-          ></a>
-        </div>
-      </div>
-    </section>
-    <section id="SobreMim">
-      <p class="section__text__p1">Conheça mais</p>
-      <h1 class="title">Sobre mim</h1>
-      <div class="section-container">
-        <div class="section__pic-container1">
-          <img src="./assets/eu.jpeg" alt="Imagem do Elias" />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experiencia</h3>
-              <p>1 e 9 meses<br />Desenvolvimento Front End</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Formação</h3>
-              <p>Bacharel Humanidade <br />Linc. Pedagogia</p>
-              <p>A. desenvolvimento de sistemas</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Olá, meu nome é Elias Perreira Miguel e sou um desenvolvedor
-              front-end apaixonado por tecnologia. Com mais de 1 ano e 9 meses
-              de experiência com objetivo de criar sites com interfaces
-              modernas. Curiosidade e interesse por desenvolvimento web desde
-              pequeno, porém dedicando-me a esse aprendizado no último ano por
-              meio de diversos cursos de formação na área.
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-greeting">👋 Olá, eu sou</p>
+            <h1 class="hero-title">Elias Perreira Miguel</h1>
+            <h2 class="hero-subtitle">Desenvolvedor Full Stack</h2>
+            <p class="hero-description">
+              Especialista em desenvolvimento de sistemas empresariais e aplicações web modernas. 
+              Transformando ideias em soluções digitais inovadoras.
             </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">Vamos Conversar</a>
+              <a href="./src/images/Assets/Curriculo Estagio dev A.pdf" class="btn btn-secondary" target="_blank">
+                <i class="bi bi-download"></i> Download CV
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-number">+2</span>
+                <span class="stat-label">Anos de Experiência</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Projetos Concluídos</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Comprometimento</span>
+              </div>
+            </div>
           </div>
+          <div class="hero-image">
+            <img src="./assets/eu.jpeg" alt="Elias Perreira Miguel" />
+            <div class="hero-badge">
+              <i class="bi bi-code-slash"></i>
+              <span>Full Stack Developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <i class="bi bi-chevron-down"></i>
         </div>
       </div>
     </section>
-    <section id="experiencias">
-      <p class="section__text__p1">Explore minhas</p>
-      <h1 class="title">Experiências</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Desenvolvimento Front End</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Css</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Sass</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Less</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Jquery</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>VueJs</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Desenvolvimento Back End</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MSQL</h3>
 
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                </div>
-              </article>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Sobre Mim</h2>
+          <p class="section-subtitle">Conheça minha jornada e paixão pela tecnologia</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Desenvolvedor Full Stack Apaixonado</h3>
+            <p>
+              Sou um desenvolvedor Full Stack com experiência prática em desenvolvimento de
+              sistemas de gestão empresarial, aplicações web e automação de processos.
+            </p>
+            <p>
+              Cursando Análise e Desenvolvimento de Sistemas pela Estácio, atuei na GAptech
+              Solutions, contribuindo para a criação de soluções robustas e personalizadas para
+              o setor corporativo.
+            </p>
+            <p>
+              Busco constantemente aprimorar minhas habilidades por meio de cursos livres e 
+              projetos práticos, sempre focado em entregar soluções de alta qualidade.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight">
+                <i class="bi bi-check-circle"></i>
+                <span>Sistemas de Gestão Empresarial</span>
+              </div>
+              <div class="highlight">
+                <i class="bi bi-check-circle"></i>
+                <span>Aplicações Web Responsivas</span>
+              </div>
+              <div class="highlight">
+                <i class="bi bi-check-circle"></i>
+                <span>Automação de Processos</span>
+              </div>
+              <div class="highlight">
+                <i class="bi bi-check-circle"></i>
+                <span>Integração de APIs</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-cards">
+            <div class="info-card">
+              <div class="card-icon">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <h4>Experiência</h4>
+              <p>2+ anos em desenvolvimento Full Stack</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon">
+                <i class="bi bi-mortarboard"></i>
+              </div>
+              <h4>Formação</h4>
+              <p>Análise e Desenvolvimento de Sistemas</p>
+            </div>
+            <div class="info-card">
+              <div class="card-icon">
+                <i class="bi bi-gear"></i>
+              </div>
+              <h4>Especialidade</h4>
+              <p>Sistemas Empresariais e Web Apps</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="projetos">
-      <p class="section__text__p1">Navegar em meus recentes</p>
-      <h1 class="title">Projetos</h1>
-      <div class="experience-details-container">
-        <div class="about-containeres">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                  src="./src/images/Assets/backend.jpeg"
-                  alt="Project 3"
-                  class="project-img"
-                />
-            </div>
-            <h4 class="experience-sub-title project-title">
-              Projeto Backend-express-nodejs-sequelize-atenicação
-            </h4>
-            <div class="btn-container">
-              <a href="https://github.com/eliamiguel/Backend-express"  class="btn btn-color-2 project-btn" target="_blank">Github</a>
-            <button
-              type="button"
-              disabled
-              class="btn btn-color-2 project-btn"
-            >
-              Demo
-            </button>
-          </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/agenda.jpeg"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Agenda com sistema de Login
-            </h2>
-            <div class="btn-container">
-                <a href="https://github.com/eliamiguel/projetoAgenda"  class="btn btn-color-2 project-btn" target="_blank">Github</a>
-              <button
-                type="button"
-                disabled
-                class="btn btn-color-2 project-btn"
-              >
-                Demo
-              </button>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Competências Técnicas</h2>
+          <p class="section-subtitle">Tecnologias e ferramentas que domino</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="bi bi-window"></i>
+              Front-end
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">React</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Next.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">TypeScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">HTML/CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./src/images/Assets/pixibay.jpeg" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Projeto Clone pixabay
-            </h2>
-            <div class="btn-container">
-                <a href="https://github.com/eliamiguel/clone_pixabay_api"
-                class="btn btn-color-2 project-btn" target="_blank">  Github</a
-                >
-                <a href="https://clone-pixabay-api.vercel.app/" class="btn btn-color-2 project-btn" target="_blank">Demo</a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./src/images/Assets/disney1.jpeg" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Projeto Clone disney
-            </h2>
-            <div class="btn-container">
-                <a href="https://github.com/eliamiguel/clone_disneyplus"
-                class="btn btn-color-2 project-btn" target="_blank">  Github</a
-                >
-                <a href="https://clone-disneyplus-gou9.vercel.app/" class="btn btn-color-2 project-btn" target="_blank">Demo</a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/emy1.jpeg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Projeto Loja de Roupas
-            </h2>
-            <div class="btn-container">
-                <a href="https://github.com/eliamiguel/Emy-by" class="btn btn-color-2 project-btn" target="_blank">Github</a>
-                <a href="https://emy-by.vercel.app/" class="btn btn-color-2 project-btn" target="_blank">Demo</a>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="bi bi-server"></i>
+              Back-end
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Node.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 92%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Express</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Laravel</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">PHP</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Prisma</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 87%"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/filme1.jpeg"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Projeto Site de filmes
-            </h2>
-            <div class="btn-container">
-                <a href="https://github.com/eliamiguel/Landing_page_filme"
-                target="_blank" class="btn btn-color-2 project-btn">Github</a
-                >
-                <a href="https://landing-page-filme-lemon.vercel.app/" class="btn btn-color-2 project-btn" target="_blank">Demo</a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/efood.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Projeto Restaurante
-            </h2>
-            <div class="btn-container">
-                <a href="https://github.com/eliamiguel/restaurante_efood"
-                target="_blank" class="btn btn-color-2 project-btn">Github</a
-                >
-              <button
-                type="button"
-                disabled
-                class="btn btn-color-2 project-btn"
-              >Demo
-                
-              </button>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="bi bi-database"></i>
+              Banco de Dados
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">PostgreSQL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">MySQL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">MongoDB</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/games.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Projeto Loja de games
-            </h2>
-            <div class="btn-container">
-                <a href="https://github.com/eliamiguel/eplay"  class="btn btn-color-2 project-btn" target="_blank">Github</a>
-              <button
-                type="button"
-                disabled
-                class="btn btn-color-2 project-btn"
-              >
-                Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <h2 class="experience-sub-title project-title">
-              Pequenos Projetos
-            </h2>
-            <div class="btn-container">
-                <a href="https://pequenosprojetos.vercel.app/"
-                class="btn btn-color-2 project-btn" target="_blank"> Clique Aqui</a
-                >
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="bi bi-tools"></i>
+              Outros
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Git</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 92%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Docker</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">AWS</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="Contatos">
-      <p class="section__text__p1">Entrar em contato</p>
-      <h1 class="title">Contate-me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a href="mailto:examplemail@gmail.com"
-              >eliasperreiramiguel@gmail.com</a
-            >
-          </p>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Experiência Profissional</h2>
+          <p class="section-subtitle">Minha trajetória no desenvolvimento</p>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.linkedin.com/in/elias-perreira-miguel/"
-            target="_blank" >Linkedin</a
-            >
-          </p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Desenvolvedor Full Stack</h3>
+                <span class="company">GAptech Solutions</span>
+                <span class="period">2023 - Presente</span>
+              </div>
+              <ul class="timeline-achievements">
+                <li>Desenvolvimento de sistemas de gestão empresarial personalizados</li>
+                <li>Integração de APIs e criação de dashboards interativos</li>
+                <li>Manutenção de aplicações web responsivas com Next.js, Node.js, Express e PostgreSQL</li>
+                <li>Criação de interfaces intuitivas com foco em UX</li>
+                <li>Manutenção de código legado, correção de bugs e melhoria de performance</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Estagiário de Desenvolvimento</h3>
+                <span class="company">CELEPAR</span>
+                <span class="period">2022 - 2023</span>
+              </div>
+              <ul class="timeline-achievements">
+                <li>Manutenção de aplicações web: Divulgação, Banner, ArquivoPR e Workflow</li>
+                <li>Desenvolvimento e manutenção de programas PHP do sistema Expresso</li>
+                <li>Manutenção de scripts de execução periódica no ambiente</li>
+                <li>Auxílio na administração dos ambientes utilizando PHP, HTML, CSS, JavaScript</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Desenvolvedor Web & Marketing</h3>
+                <span class="company">Freelancer</span>
+                <span class="period">2021 - Presente</span>
+              </div>
+              <ul class="timeline-achievements">
+                <li>Criação e gerenciamento de landing pages (captura de leads, agradecimento e vendas)</li>
+                <li>Automação de marketing com Sellflux (envio de e-mails, WhatsApp e SMS)</li>
+                <li>Gestão de campanhas de tráfego pago (Facebook Ads)</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-tag">Landing Pages</span>
+                <span class="tech-tag">Sellflux</span>
+                <span class="tech-tag">Facebook Ads</span>
+                <span class="tech-tag">Marketing Digital</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <footer>
-      <div>
-        <ul class="sociais_List">
-        <li class="sociais_List_item">
-          <a href="https://www.instagram.com/cordeiro9443/" target="_blank">
-            <i class="bi bi-instagram"> <span>Instagram</span></i
-          ></a>
-        </li>
-       <li class="sociais_List_item">
-        <a href="https://wa.me/+5541988600519" target="_blank">
-          <i class="bi bi-whatsapp"></i> <span>Whatsapp</span></i
-        ></a>
-       </li>
-        <li class="sociais_List_item"> 
-          <a href="https://www.facebook.com/?paipv=0&eav=AfZHwNCsIAuqLZYfHNDt0daHqV94qjnx4T1zGKh644kQmLixmZYvhY2P3h_5VASiuxo&_rdr" target="_blank">
-            <i class="bi bi-facebook"></i> <span>Facebook</span></i
-          ></a>
-        </li>
-      </ul>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Projetos em Destaque</h2>
+          <p class="section-subtitle">Alguns dos meus trabalhos mais recentes</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card featured">
+            <div class="project-image">
+              <img src="./src/images/Assets/crm.png" alt="CRM Fitness" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/eliamiguel/app-crm-academy-back" target="_blank" class="project-link">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://v0-academy-and-trainer-crm.vercel.app/" target="_blank" class="project-link">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Sistema CRM Fitness</h3>
+              <p>Sistema completo de gerenciamento para academias e personal trainers com controle de alunos, pagamentos e agendamentos.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./assets/emy1.jpeg" alt="Loja de Roupas" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/eliamiguel/Emy-by" target="_blank" class="project-link">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://emy-by.vercel.app/" target="_blank" class="project-link">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Emy Store</h3>
+              <p>E-commerce moderno para loja de roupas com interface responsiva e funcionalidades completas de compra.</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./src/images/Assets/pixibay.jpeg" alt="Clone Pixabay" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/eliamiguel/clone_pixabay_api" target="_blank" class="project-link">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://clone-pixabay-api.vercel.app/" target="_blank" class="project-link">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Clone Pixabay</h3>
+              <p>Clone da plataforma Pixabay com integração de API para busca e exibição de imagens.</p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">API</span>
+                <span class="tech-tag">HTML/CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./assets/filme1.jpeg" alt="Site de Filmes" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/eliamiguel/Landing_page_filme" target="_blank" class="project-link">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://landing-page-filme-lemon.vercel.app/" target="_blank" class="project-link">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Movie Landing Page</h3>
+              <p>Landing page moderna para site de filmes com design atrativo e responsivo.</p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="projects-cta">
+          <a href="https://pequenosprojetos.vercel.app/" target="_blank" class="btn btn-outline">
+            Ver Mais Projetos
+          </a>
+        </div> -->
       </div>
-      
-      <p>
-        Copyright &#169; 2023 Elias Perreira Miguel. Todos os direitos
-        reservados.
-      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Vamos Conversar?</h2>
+          <p class="section-subtitle">Estou sempre aberto a novas oportunidades e projetos interessantes</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <a href="mailto:eliasperreiramiguel@gmail.com">eliasperreiramiguel@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Telefone</h4>
+                <a href="tel:+5541988600519">+55 (41) 98860-0519</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-linkedin"></i>
+              </div>
+              <div class="contact-details">
+                <h4>LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/elias-perreira-miguel/" target="_blank">elias-perreira-miguel</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-github"></i>
+              </div>
+              <div class="contact-details">
+                <h4>GitHub</h4>
+                <a href="https://github.com/eliamiguel" target="_blank">github.com/eliamiguel</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-cta">
+            <h3>Pronto para começar um projeto?</h3>
+            <p>Vamos discutir como posso ajudar a transformar suas ideias em realidade!</p>
+            <div class="contact-buttons">
+              <a href="mailto:eliasperreiramiguel@gmail.com" class="btn btn-primary">
+                <i class="bi bi-envelope"></i>
+                Enviar Email
+              </a>
+              <a href="https://wa.me/+5541988600519" target="_blank" class="btn btn-secondary">
+                <i class="bi bi-whatsapp"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Elias Perreira Miguel</h3>
+            <p>Desenvolvedor Full Stack apaixonado por criar soluções digitais inovadoras.</p>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/elias-perreira-miguel/" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/eliamiguel" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://wa.me/+5541988600519" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Elias Perreira Miguel. Todos os direitos reservados.</p>
+        </div>
+      </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
